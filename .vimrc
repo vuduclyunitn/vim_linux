@@ -16,6 +16,10 @@ set history=1000                " remember more commands and search history
 
 set colorcolumn=80,100 " Delimiteter at 80 , 100
 
+"" Shortcup for editing and saving vimrc
+nnoremap <silent> <leader>ev :e $MYVIMRC<CR>
+nnoremap <silent> <leader>sv :so $MYVIMRC<CR>
+"
 "" Runtime Path Manipulation
 "execute pathogen#infect()
 
@@ -59,9 +63,6 @@ call vundle#end()            " Ending Vundle plugins
 "                                "    (in case swapfile is ever turned on)
 "noremap! <F1> <Esc>
 
-"" Shortcup for editing and saving vimrc
-"nnoremap <silent> <leader>ev :e $MYVIMRC<CR>
-"nnoremap <silent> <leader>sv :so $MYVIMRC<CR>
 
 "set autoread                    " automatically reload files changed outside of Vim
 
