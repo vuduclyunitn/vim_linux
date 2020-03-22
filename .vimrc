@@ -27,6 +27,8 @@ nnoremap <silent> <leader>sv :so $MYVIMRC<CR>
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()          " Starting Vundle plugins
 Plugin 'davidhalter/jedi-vim' "auto-completion
+set rtp+=~/.fzf " should be changed depending on how you installed fzf
+Plugin 'junegunn/fzf.vim'
 call vundle#end()            " Ending Vundle plugins
 "filetype plugin on
 
@@ -82,8 +84,6 @@ call vundle#end()            " Ending Vundle plugins
 "hi Visual term=reverse cterm=reverse guibg=Grey
 
 
-"call vundle#begin()
-"" alternatively, pass a path where Vundle should install plugins
 
 "" let Vundle manage Vundle, required
 "Plugin 'VundleVim/Vundle.vim'
@@ -91,16 +91,10 @@ call vundle#end()            " Ending Vundle plugins
 "" Easy commenting
 "Plugin 'tpope/vim-commentary'
 
-"" Saving and source vimrc
-"nnoremap <silent> <leader>ev :e $MYVIMRC<CR>
-"nnoremap <silent> <leader>sv :so $MYVIMRC<CR>
 
 "Plugin 'SirVer/ultisnips'
 "Plugin 'jiangmiao/auto-pairs'
 "Plugin 'tpope/vim-fugitive'
 "Plugin 'christoomey/vim-tmux-navigator'
 
-"set rtp+=/usr/local/opt/fzf
-"set rtp+=~/.fzf
-"Plugin 'junegunn/fzf.vim'
 
