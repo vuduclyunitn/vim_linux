@@ -11,6 +11,8 @@ set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
 
+set history=1000                " remember more commands and search history
+
 "" Runtime Path Manipulation
 "execute pathogen#infect()
 
@@ -41,7 +43,6 @@ set expandtab
 "set formatoptions+=1 " When wrapping paragraphs, don't end lines
 "                      "with 1-letter words (looks stupid)
 
-"set history=1000                " remember more commands and search history
 
 "set nobackup                    " do not keep backup files, it's 70's style cluttering
 "set nowritebackup               " do not write out changes via backup files
