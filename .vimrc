@@ -22,6 +22,7 @@ set colorcolumn=80,100 " Delimiteter at 80 , 100
 "" set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()          " Starting Vundle plugins
+Plugin 'davidhalter/jedi-vim' "auto-completion
 call vundle#end()            " Ending Vundle plugins
 "filetype plugin on
 
@@ -49,7 +50,8 @@ call vundle#end()            " Ending Vundle plugins
 
 "set nobackup                    " do not keep backup files, it's 70's style cluttering
 "set nowritebackup               " do not write out changes via backup files
-"set noswapfile                  " do not write annoying intermediate swap files,
+"set noswapfile                  " do not write annt config --global user.name
+"oying intermediate swap files,
 "                                "    who did ever restore from swap files anyway?
 "set directory=~/.vim/.tmp,~/tmp,/tmp
 "                                " store swap files in one of these directories
@@ -93,7 +95,6 @@ call vundle#end()            " Ending Vundle plugins
 "nnoremap <silent> <leader>sv :so $MYVIMRC<CR>
 
 "Plugin 'SirVer/ultisnips'
-"Plugin 'davidhalter/jedi-vim'
 "Plugin 'jiangmiao/auto-pairs'
 "Plugin 'tpope/vim-fugitive'
 "Plugin 'christoomey/vim-tmux-navigator'
