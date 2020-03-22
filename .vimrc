@@ -1,5 +1,5 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+set nocompatible              " be iMproved, required when installed Vundle
+filetype off                  " required when installed Vundle
 
 syntax on
 
@@ -20,7 +20,9 @@ set colorcolumn=80,100 " Delimiteter at 80 , 100
 "execute pathogen#infect()
 
 "" set the runtime path to include Vundle and initialize
-"set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()          " Starting Vundle plugins
+call vundle#end()            " Ending Vundle plugins
 "filetype plugin on
 
 
@@ -79,7 +81,6 @@ set colorcolumn=80,100 " Delimiteter at 80 , 100
 
 "call vundle#begin()
 "" alternatively, pass a path where Vundle should install plugins
-""call vundle#begin('~/some/path/here')
 
 "" let Vundle manage Vundle, required
 "Plugin 'VundleVim/Vundle.vim'
@@ -101,4 +102,3 @@ set colorcolumn=80,100 " Delimiteter at 80 , 100
 "set rtp+=~/.fzf
 "Plugin 'junegunn/fzf.vim'
 
-"call vundle#end()            " required
