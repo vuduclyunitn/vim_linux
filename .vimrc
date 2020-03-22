@@ -4,6 +4,7 @@ filetype off                  " required
 syntax on
 
 "Basic configurations
+filetype plugin indent on
 " show existing tab with 4 spaces width
 set tabstop=4
 " when indenting with '>', use 4 spaces width
@@ -13,20 +14,20 @@ set expandtab
 
 set history=1000                " remember more commands and search history
 
+set colorcolumn=80,100 " Delimiteter at 80 , 100
+
 "" Runtime Path Manipulation
 "execute pathogen#infect()
 
 "" set the runtime path to include Vundle and initialize
 "set rtp+=~/.vim/bundle/Vundle.vim
 "filetype plugin on
-"filetype plugin indent on
 
 
 "" Highlight column 80.
 "set textwidth=100
 "set t_Co=256
 "colorscheme molokai
-"set colorcolumn=80,100
 "highlight ColorColumn ctermbg=246 guibg=#2d2d2d
 "highlight Comment ctermfg=green
 
