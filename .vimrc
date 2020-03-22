@@ -1,6 +1,8 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+syntax on
+
 "Basic configurations
 " show existing tab with 4 spaces width
 set tabstop=4
@@ -17,7 +19,6 @@ set expandtab
 "filetype plugin on
 "filetype plugin indent on
 
-syntax on
 
 "" Highlight column 80.
 "set textwidth=100
