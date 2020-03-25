@@ -17,8 +17,8 @@ set history=1000                " remember more commands and search history
 set colorcolumn=80,100 " Delimiteter at 80 , 100
 
 "" Shortcup for editing and saving vimrc
-nnoremap <silent> <leader>ev :e $MYVIMRC<CR>
-nnoremap <silent> <leader>sv :so $MYVIMRC<CR>
+nnoremap <silent> <leader>e :e $MYVIMRC
+nnoremap <silent> <leader>s :so $MYVIMRC
 "
 "" Runtime Path Manipulation
 "execute pathogen#infect()
@@ -27,8 +27,13 @@ nnoremap <silent> <leader>sv :so $MYVIMRC<CR>
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()          " Starting Vundle plugins
 Plugin 'davidhalter/jedi-vim' "auto-completion
+
 set rtp+=~/.fzf " should be changed depending on how you installed fzf
 Plugin 'junegunn/fzf.vim'
+
+Plugin 'tpope/vim-commentary' " Easy commenting
+
+Plugin 'jiangmiao/auto-pairs' " auto complete brackets
 call vundle#end()            " Ending Vundle plugins
 "filetype plugin on
 
@@ -88,12 +93,9 @@ call vundle#end()            " Ending Vundle plugins
 "" let Vundle manage Vundle, required
 "Plugin 'VundleVim/Vundle.vim'
 
-"" Easy commenting
-"Plugin 'tpope/vim-commentary'
 
 
 "Plugin 'SirVer/ultisnips'
-"Plugin 'jiangmiao/auto-pairs'
 "Plugin 'tpope/vim-fugitive'
 "Plugin 'christoomey/vim-tmux-navigator'
 
