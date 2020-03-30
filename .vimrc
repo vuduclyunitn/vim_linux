@@ -16,6 +16,7 @@ set history=1000                " remember more commands and search history
 
 set colorcolumn=80,100 " Delimiteter at 80 , 100
 
+
 "" Shortcup for editing and saving vimrc
 nnoremap <silent> <leader>e :e $MYVIMRC
 nnoremap <silent> <leader>s :so $MYVIMRC
@@ -34,6 +35,8 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'tpope/vim-commentary' " Easy commenting
 
 Plugin 'jiangmiao/auto-pairs' " auto complete brackets
+
+Plugin 'Yggdroot/indentLine'
 call vundle#end()            " Ending Vundle plugins
 "filetype plugin on
 
