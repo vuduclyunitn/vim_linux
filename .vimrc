@@ -21,6 +21,7 @@ set colorcolumn=80,100 " Delimiteter at 80 , 100
 nnoremap <silent> <leader>e :e $MYVIMRC
 nnoremap <silent> <leader>s :so $MYVIMRC
 "
+highlight Comment ctermfg=green
 "" Runtime Path Manipulation
 "execute pathogen#infect()
 
@@ -37,6 +38,7 @@ Plugin 'tpope/vim-commentary' " Easy commenting
 Plugin 'jiangmiao/auto-pairs' " auto complete brackets
 
 Plugin 'Yggdroot/indentLine'
+Plugin 'christoomey/vim-tmux-navigator'
 call vundle#end()            " Ending Vundle plugins
 "filetype plugin on
 
@@ -46,7 +48,6 @@ call vundle#end()            " Ending Vundle plugins
 "set t_Co=256
 "colorscheme molokai
 "highlight ColorColumn ctermbg=246 guibg=#2d2d2d
-"highlight Comment ctermfg=green
 
 "" Remove trailing whitespace on save.
 "autocmd BufWrite * :%s/\s\+$//e
@@ -100,6 +101,5 @@ call vundle#end()            " Ending Vundle plugins
 
 "Plugin 'SirVer/ultisnips'
 "Plugin 'tpope/vim-fugitive'
-"Plugin 'christoomey/vim-tmux-navigator'
 
 
